@@ -28,7 +28,7 @@
 #include "WS2812FX/WS2812FX.h"
 
 #define LED_RGB_SCALE 255       // this is the scaling factor used for color conversion
-#define LED_COUNT 50            // this is the number of WS2812B leds on the strip
+#define LED_COUNT 350            // this is the number of WS2812B leds on the strip
 #define LED_INBUILT_GPIO 2      // this is the onboard LED used to show on/off only
 
 // Global variables
@@ -256,8 +256,8 @@ homekit_accessory_t *accessories[] = {
     HOMEKIT_ACCESSORY(.id = 1, .category = homekit_accessory_category_lightbulb, .services = (homekit_service_t*[]) {
         HOMEKIT_SERVICE(ACCESSORY_INFORMATION, .characteristics = (homekit_characteristic_t*[]) {
             &name,
-            HOMEKIT_CHARACTERISTIC(MANUFACTURER, "Generic"),
-            HOMEKIT_CHARACTERISTIC(SERIAL_NUMBER, "137A2BABF19D"),
+            HOMEKIT_CHARACTERISTIC(MANUFACTURER, "Quang Nguyen"),
+            HOMEKIT_CHARACTERISTIC(SERIAL_NUMBER, "16091988"),
             HOMEKIT_CHARACTERISTIC(MODEL, "LEDStripFX"),
             HOMEKIT_CHARACTERISTIC(FIRMWARE_REVISION, "0.1"),
             HOMEKIT_CHARACTERISTIC(IDENTIFY, led_identify),
