@@ -1,7 +1,7 @@
-#define DEVICE_MANUFACTURER "Unknown"
-#define DEVICE_NAME "MultiSensor"
-#define DEVICE_MODEL "esp8266"
-#define DEVICE_SERIAL "12345678"
+#define DEVICE_MANUFACTURER "Quang Nguyen"
+#define DEVICE_NAME "Motion Sensor"
+#define DEVICE_MODEL "MultiSensor"
+#define DEVICE_SERIAL "16091988"
 #define FW_VERSION "1.0"
 #define MOTION_SENSOR_GPIO 4
 #define LED_GPIO 2
