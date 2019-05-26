@@ -147,15 +147,15 @@ homekit_accessory_t *accessories[] = {
     HOMEKIT_ACCESSORY(.id=1, .category=homekit_accessory_category_switch, .services=(homekit_service_t*[]){
         HOMEKIT_SERVICE(ACCESSORY_INFORMATION, .characteristics=(homekit_characteristic_t*[]){
             &name,
-            HOMEKIT_CHARACTERISTIC(MANUFACTURER, "iTEAD"),
-            HOMEKIT_CHARACTERISTIC(SERIAL_NUMBER, "037A2BABF19D"),
+            HOMEKIT_CHARACTERISTIC(MANUFACTURER, "Quang Nguyen"),
+            HOMEKIT_CHARACTERISTIC(SERIAL_NUMBER, "16091988"),
             HOMEKIT_CHARACTERISTIC(MODEL, "Basic"),
             HOMEKIT_CHARACTERISTIC(FIRMWARE_REVISION, "0.1.6"),
             HOMEKIT_CHARACTERISTIC(IDENTIFY, switch_identify),
             NULL
         }),
         HOMEKIT_SERVICE(SWITCH, .primary=true, .characteristics=(homekit_characteristic_t*[]){
-            HOMEKIT_CHARACTERISTIC(NAME, "Sonoff Switch"),
+            HOMEKIT_CHARACTERISTIC(NAME, "Homekit Switch"),
             &switch_on,
             NULL
         }),
